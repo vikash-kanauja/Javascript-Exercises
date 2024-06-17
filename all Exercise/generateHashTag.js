@@ -8,12 +8,12 @@ const generateHash = (str) => {
     .join("");
   ans = `#${ans}`;
 
-// let ans = str
-//     .split(" ")
-//     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-//     .join("");
-//   ans = `#${ans}`;
-//   return ans;
+  // let ans = str
+  //     .split(" ")
+  //     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+  //     .join("");
+  //   ans = `#${ans}`;
+  //   return ans;
 };
 
 const ans = generateHash("back modi");
