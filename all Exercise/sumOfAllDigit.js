@@ -1,6 +1,7 @@
 const sumOfDigit = (num) => {
-  let arr = Array.from(String(num), Number);
-  return arr.reduce((accum, currEle) => (accum = accum + currEle), 0);
+  // let arr = Array.from(String(num),Number);
+  let arr = [...String(num)]
+  return arr.reduce((accum, currEle) => ( accum + parseInt(currEle)), 0);
 
   // let sum = 0;
   // while (num > 0) {
