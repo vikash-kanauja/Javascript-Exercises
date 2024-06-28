@@ -3,8 +3,27 @@ const isPalindrome = (str) =>{
     str = str.toLowerCase().replace(/\W/g, "");
     reverse_str = str.split("").reverse().join("")
     return reverse_str === str;
-
 }
+// Method Second
+
+function isPalindrome(str) {
+    // Convert the string to lowercase
+    str = str.toLowerCase();
+    // Initialize an empty string to store the cleaned characters
+    let cleanedStr = '';
+    // Loop through each character in the string
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+        // Check if the character is alphanumeric
+        if ((char >= 'a' && char <= 'z') || (char >= '0' && char <= '9')) {
+            cleanedStr += char;
+        }
+    }
+    // Check if the cleaned string is equal to its reverse
+    return cleanedStr === cleanedStr.split('').reverse().join('');
+}
+
+
 console.log(isPalindrome("rewqqwer"))
 console.log(isPalindrome("A man, a place, a canal"))
 
