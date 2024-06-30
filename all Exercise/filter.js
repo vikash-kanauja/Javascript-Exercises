@@ -54,3 +54,11 @@ let result = people.filter(
   (person) => person.age === 25 && person.city === "New York"
 );
 console.log(result); // Output: [{ name: "Alice", age: 25, city: "New York" }, { name: "Charlie", age: 25, city: "New York" }]
+
+
+
+function arrayIntersection(arr1, arr2) {
+    return arr1.filter(el => arr2.includes(el));
+  }
+  
+  console.log(arrayIntersection([1,2,0,3,4,5,6],[6,5,4,7,8,9]));
