@@ -86,4 +86,23 @@ async function getData() {
   }
   
   deleteData();
+
+  // Head
+
+  async function headRequest() {
+    try {
+      const response = await fetch('https://api.example.com/data', {
+        method: 'HEAD'
+      });
+      if (!response.ok) {
+        throw new Error('Network response was not ok ' + response.statusText);
+      }
+      console.log(response.headers); // handle the headers
+    } catch (error) {
+      console.error('There was a problem with the fetch operation:', error);
+    }
+  }
+  
+  headRequest();
+  
   
