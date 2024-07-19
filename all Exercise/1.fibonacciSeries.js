@@ -7,7 +7,7 @@ const fibonacciSeries = (num) => {
   }
   return fibSeries;
 };
-console.log(fibonacciSeries(10));
+console.log(fibonacciSeries(2));
 
 //Need to learn again recursion version of fibonacciSeries
 
