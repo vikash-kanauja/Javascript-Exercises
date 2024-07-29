@@ -35,3 +35,7 @@ let numbers = [1, 2, 3, 4, 5];
 // Remove all elements starting from index 2
 numbers.splice(2);
 console.log(numbers); // [1, 2]
+
+
+
+// The splice method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place. It modifies the original array.

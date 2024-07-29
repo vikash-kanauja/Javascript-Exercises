@@ -6,7 +6,7 @@ const generateHash = (str) => {
     .split(" ")
     .map((word) => word.replace(word.charAt(0), word.charAt(0).toUpperCase()))
     .join("");
-  ans = `#${ans}`;
+  return ans = `#${ans}`;
 
   // let ans = str
   //     .split(" ")
@@ -16,5 +16,5 @@ const generateHash = (str) => {
   //   return ans;
 };
 
-const ans = generateHash("back modi");
+const ans = generateHash("go back");
 console.log(ans);

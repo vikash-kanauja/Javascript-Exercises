@@ -1,5 +1,5 @@
 const sumOfDigit = (num) => {
-  // let arr = Array.from(String(num),Number);
+  // let arr = Array.from(String(num),Number); // to change the number into array need to first convert in string
   let arr = [...String(num)]
   return arr.reduce((accum, currEle) => ( accum + parseInt(currEle)), 0);
 
